@@ -1,0 +1,68 @@
+.grid-container {
+    justify-content: left;
+    align-items: center;
+    
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+
+    margin: 0 auto;
+    width: 70%;
+    gap:10px;
+    margin-top: 0px;
+  
+}
+
+#movie1 {
+    background-image: url("./imagens/fantasma.svg"); 
+    background-size: cover;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+    background-position: -80px;
+    border: 1px solid yellow;
+}
+
+
+
+#movie2 {
+    background-image: url("./imagens/rei.svg"); 
+    background-size: cover;
+}
+
+#movie3 {
+    background-image: url("./imagens/enrrolados.svg"); 
+    background-size: cover;
+}
+
+#movie4 {
+    background-image: url("./imagens/toystory.svg"); 
+    background-size: cover;
+}
+
+#movie5 {
+    background-image: url("./imagens/maisAzul.svg"); 
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-item   {
+   
+    background: #217DA5;
+    background-size: cover;
+    height: 80px;
+    width: 50px;
+    padding-top:0;
+    padding:15px;
+  
+  
+}
+
+#t {
+    background: #a52121;
+    background-size: cover;
+    height: 80px;
+    width: 50px;
+    padding-top:0;
+    padding:15px;
+}
