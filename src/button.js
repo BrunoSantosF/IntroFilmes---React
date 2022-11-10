@@ -7,7 +7,8 @@ function Event(){
     }
 
     return (
-        <div onClick={test} id="t"></div>
+        
+        <div id='t'> kkkk</div>
     )
 }
 

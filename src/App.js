@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState } from "react";
 import IntrocompBranco from "./imagens/tet.svg"
 import IntrocompPreto from "./imagens/tet2.svg"
 import popcorn from "./imagens/popcorn.svg"
@@ -7,7 +7,6 @@ import Event from "./button";
 
 import './App.css'
 import './grid.css'
-
 
 export default () => {
    return (
@@ -25,10 +24,11 @@ export default () => {
         <hr id="line"/>
         
         <h1 id="catalogo">CATÁLOGO</h1>
-        
+
+      
         <div className="test">
           <div class="grid-container">
-            <div class="grid-item" id="movie1"><Event/></div>
+            <div class="grid-item" id="movie1" onClick={Event}><Event/></div>
             <div class="grid-item" id="movie2"></div>
             <div class="grid-item" id="movie3"></div>  
             <div class="grid-item" id="movie4"></div>

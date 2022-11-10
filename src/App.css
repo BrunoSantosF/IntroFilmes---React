@@ -94,8 +94,15 @@ body {
 }
 
 #footer {
-
+  position: absolute;
+  bottom: 0px;
   background: #0B2D52;
-  padding: 31px;
-  margin-top: 100px;
+  padding: 31px 250px 31px 250px ;
+  
+}
+
+#t {
+  background-color: darkgoldenrod;
+  width: 400px;
+  height: 40px;
 }
