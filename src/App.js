@@ -5,10 +5,26 @@ import popcorn from "./imagens/popcorn.svg"
 
 import Event from "./button";
 
+import { Filme } from './Components/Filme'
+
 import './App.css'
 import './grid.css'
 
 export default () => {
+
+  const [ mostra, setMostra ] = useState(true)
+
+  const filmes = [ 
+    {
+      nome: "onde esta meu pai",
+      imagem: ""
+    },
+    {
+      nome: "esqueceram de mim",
+      imagem: ""
+    }
+  ]
+
    return (
     <div className="screen">
       <div className="screen2">
@@ -28,8 +44,9 @@ export default () => {
       
         <div className="test">
           <div class="grid-container">
-            <div class="grid-item" id="movie1" onClick={Event}><Event/></div>
-            <div class="grid-item" id="movie2"></div>
+
+            <div class="grid-item" id="movie1" onClick={() => setMostra(anterior => !anterior)}>{mostra && <Filme nome="legal" imagem=""/>}</div>
+            {/* <div class="grid-item" id="movie2"></div>
             <div class="grid-item" id="movie3"></div>  
             <div class="grid-item" id="movie4"></div>
             <div class="grid-item" id="movie5"></div>
@@ -42,7 +59,7 @@ export default () => {
             <div class="grid-item" id="movie12"></div>
             <div class="grid-item" id="movie13"></div>  
             <div class="grid-item" id="movie14"></div>
-            <div class="grid-item" id="movie15"></div>  
+            <div class="grid-item" id="movie15"></div>   */}
           </div>
         </div>
 
